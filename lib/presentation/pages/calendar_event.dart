@@ -658,6 +658,7 @@ class _CalendarEventPageState extends State<CalendarEventPage> {
 
               Result<dynamic> result;
               if (_event.eventId?.isEmpty ?? true) {
+                //向系统日历写入
                 result = await _deviceCalendarPlugin.createOrUpdateEvent(_event);
               }
               else {

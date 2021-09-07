@@ -37,14 +37,14 @@ class _CalendarsPageState extends State<CalendarsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calendars'),
+        title: Text('日程'),
       ),
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Text(
-              'WARNING: some aspects of saving events are hardcoded in this example app. As such we recommend you do not modify existing events as this may result in loss of information',
+              '警告：在这个示例应用程序中，保存事件的某些方面是硬编码的。 因此，我们建议您不要修改现有事件，因为这可能会导致信息丢失',
               style: Theme.of(context).textTheme.title,
             ),
           ),
@@ -88,7 +88,7 @@ class _CalendarsPageState extends State<CalendarsPage> {
                           margin: const EdgeInsets.fromLTRB(0, 0, 5.0, 0),
                           padding: const EdgeInsets.all(3.0),
                           decoration: BoxDecoration(border: Border.all(color: Colors.blueAccent)),
-                          child: Text('Default'),
+                          child: Text('默认'),
                         ),
                         Icon(_calendars[index].isReadOnly
                             ? Icons.lock

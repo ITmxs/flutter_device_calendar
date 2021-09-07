@@ -62,7 +62,7 @@ class _CalendarEventsPageState extends State<CalendarEventsPage> {
                   )
               ],
             )
-          : Center(child: Text('No events found')),
+          : Center(child: Text('没有发现事件')),
       floatingActionButton: _getAddEventButton(context)
     );
   }
